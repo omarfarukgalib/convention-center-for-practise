@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>convention centre using bootstrap</title>
+    <style>
+        .card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .icons {
+            width: 200px;
+            height: 160px;
+            position: relative;
+            bottom: 40px;
+            background-image: url("google-changes-play-store-png-logo-23.png");
+            background-size: cover;
+            margin-left: 1000px;
+        }
+    </style>
+</head>
+<body>
+
+    <!------------------------------------- Using Navbar Bootstrap ----------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left:150px;color:black;font-weight:bold;">
+                Abacus Convention Centre
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="margin-left:300px; font-weight:bold;padding:10px;">
+                    <li class="nav-item">
+                        <a style="margin:10px;" class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="margin:10px;" class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="margin:10px;" class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="margin:10px;" class="nav-link ">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------------------ Using Carousel Bootstrap------------------------------------->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div style="margin-bottom:40px;" class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size:40px;">The Perfect venue for your</h5>
+                    <h5 style="font-size:40px;">next event</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+
+                    <a style="border-radius:8px;text-decoration:none;padding:10px 30px;font-weight:bold;color:rgba(6, 29, 233, 0.904)"
+                        class="bg-white" href="">Book Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div style="margin-bottom:40px;" class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size:40px;">The Perfect venue for your</h5>
+                    <h5 style="font-size:40px;">next event</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+
+                    <a style="border-radius:8px;text-decoration:none;padding:10px 30px;font-weight:bold;color:rgba(12, 31, 204, 0.945)"
+                        class="bg-white" href="">Book Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner.png" class="d-block w-100" alt="...">
+                <div style="margin-bottom:40px;" class="carousel-caption d-none d-md-block">
+                    <h5 style="font-size:40px;">The Perfect venue for your</h5>
+                    <h5 style="font-size:40px;">next event</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+
+                    <a style="border-radius:8px;text-decoration:none;padding:10px 30px;font-weight:bold;color:rgba(12, 26, 160, 0.637)"
+                        class="bg-white" href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--------------------------- Using card image and card body under card text ----------------------------->
+
+    <div class="card w-75">
+        <div class="card-img">
+            <img class="img-fluid" src="images/wedding.png" alt="">
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">Every moment is precious</h2>
+            <p class="card-text">
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ipsum tempora repellat
+                animi velit pariatur veniam magnam neque ratione impedit.
+            </p><span
+                style="font-weight:bold;padding:5px;border:1px solid gray;position:relative;bottom:30px;left:260px;">20%
+                off on next
+                booking<button type="button" class="btn-close" aria-label="Close"></button></span>
+
+            <button style="position: relative;right:230px;top:20px;" type="button"
+                class="btn btn-primary btn-sm">Explore Our
+                Album</button>
+
+        </div>
+    </div>
+
+    <!------------------------------------- Using vertical card  ------------------------------------->
+    <div>
+        <h1 class="text-center my-5">our package</h1>
+    </div>
+    <div style="margin-top:-120px;" class="  row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col">
+            <div style="width:260px;margin-left:250px;" class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">$300</h5>
+                    <h5 class="card-title">Business fair</h5>
+                    <p class="card-text">For most business event like book fair craft fair</p>
+                    <p class="card-text">
+                    <ul class="list-group ">
+                        <li style="width:220px;" class="list-group-item ">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            limited space access
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            security facility
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            event support
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            decoration design
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            per day bill
+                        </li>
+                    </ul>
+                    <h5 style="text-align: center;margin-top:20px;">chose plan</h5>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col ">
+            <div style="width:260px;margin-left:100px;" class="card bg-primary text-white">
+
+                <div class="card-body">
+                    <h5 class="card-title">$500</h5>
+                    <h5 class="card-title">Weeding Basic</h5>
+                    <p class="card-text">For most business event like book fair craft fair</p>
+                    <p class="card-text">
+                    <ul class="list-group bg-primary ">
+                        <li style="width:220px;" class="list-group-item bg-primary text-white">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            limited space access
+                        </li>
+                        <li class="list-group-item bg-primary text-white">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            security facility
+                        </li>
+                        <li class="list-group-item bg-primary text-white">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            event support
+                        </li>
+                        <li class="list-group-item bg-primary text-white">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            decoration design
+                        </li>
+                        <li class="list-group-item bg-primary text-white">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            per day bill
+                        </li>
+                    </ul>
+                    <h5 style="text-align: center;margin-top:20px;">chose plan</h5>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col">
+            <div style="width:260px; margin-left:-50px;" class="card">
+
+                <div class="card-body">
+                    <h5 class="card-title">$200</h5>
+                    <h5 class="card-title">Corporate event</h5>
+                    <p class="card-text">For most business event like book fair craft fair</p>
+                    <p class="card-text">
+                    <ul class="list-group ">
+                        <li style="width:220px;" class="list-group-item ">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            limited space access
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            security facility
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            event support
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            decoration design
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" checked type="checkbox" value="" aria-label="...">
+                            per day bill
+                        </li>
+                    </ul>
+                    <h5 style="text-align: center;margin-top:20px;">chose plan</h5>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center my-5">Happy Clients Day</h1>
+    </div>
+    <div style="margin-top:-100px;" class="container d-flex ">
+        <div style="box-shadow: 1px 1px 1px gray;margin-left:120px;" class=" card w-25 d-flex flex-column ">
+            <div class=" card-body">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officiis veritatis! Provident culpa
+                    architecto tempore dolorem accusantium quidem dolorum ipsum iste unde inventore nulla eius illo,
+                    laudantium quis dolor rem?
+                </p>
+            </div>
+            <div class="card-img text-center">
+                <img style="margin-left:10px" class="img-fluid rounded-circle" src="images/person 1.png" alt="">
+                <p style="color:black;font-weight:bold;">Rejinas Miles</p>
+                <p>Banker</p>
+            </div>
+        </div>
+
+        <div style="box-shadow: 1px 1px 1px gray;margin-right:10px;" class="card w-25 d-flex flex-column ">
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officiis veritatis! Provident culpa
+                    architecto tempore dolorem accusantium quidem dolorum ipsum iste unde inventore nulla eius illo,
+                    laudantium quis dolor rem?
+                </p>
+            </div>
+            <div class="card-img text-center">
+                <img style="margin-left:10px" class="img-fluid rounded-circle" src="images/person 2.png" alt="">
+                <p style="color:black;font-weight:bold;">Crane Yater</p>
+                <p>Banker</p>
+            </div>
+        </div>
+
+        <div style="box-shadow: 1px 1px 1px gray;margin-right:100px;" class="card w-25 d-flex flex-column ">
+            <div class="card-body">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officiis veritatis! Provident culpa
+                    architecto tempore dolorem accusantium quidem dolorum ipsum iste unde inventore nulla eius illo,
+                    laudantium quis dolor rem?
+                </p>
+            </div>
+            <div class="card-img text-center">
+                <img style="margin-left:10px" class="img-fluid rounded-circle" src="images/person 3.png" alt="">
+                <p style="color:black;font-weight:bold;">John Drake</p>
+                <p>Banker</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center my-5">Frequently Asked question</h1>
+    </div>
+    <div class="container d-flex">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div " class=" accordion-body">
+                        <strong>What's the different between event design and event planning</strong> It is shown by
+                        default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <span style="font-weight:bold;"> How early do we need to start planning an event</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <strong>What's the different between event design and event planning</strong> It is hidden by
+                        default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <span style="font-weight:bold;"> what is your refund and cencellation policy?</span>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="ms-4 img-fluid" src="images/people.png" alt="">
+    </div>
+
+    <footer style="width:100vw;height:200px;margin-top:100px;background-color: rgba(61, 61, 66, 0.945);">
+        <p style="color:rgb(17, 17, 17);position:relative;left:200px;top:80px;font-weight:bold;">@ 2020 bike. all right
+            reserved
+        </p>
+        <div class="icons">
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
